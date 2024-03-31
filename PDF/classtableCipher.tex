@@ -1,0 +1,169 @@
+\hypertarget{classtableCipher}{}\doxysection{Класс table\+Cipher}
+\label{classtableCipher}\index{tableCipher@{tableCipher}}
+
+
+Класс шифрования и расшифрования текста шифром табличной маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$table\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtableCipher_a16dd23077ac4b8967d7956661921fc80}\label{classtableCipher_a16dd23077ac4b8967d7956661921fc80}} 
+\mbox{\hyperlink{classtableCipher_a16dd23077ac4b8967d7956661921fc80}{table\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtableCipher_aa6c08a9d9627fb9a3c8426cf8f42ebc6}{table\+Cipher}} (const int \&key)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classtableCipher_ae267fd8d4b8206e9d0e9669b81a070f2}{encrypt}} (std\+::wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Функция зашифрования \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classtableCipher_a6fa23a4051ff1e08efa5f05b46d007a6}{decrypt}} (std\+::wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Функция расшифрования \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classtableCipher_ac6bd5dc304c9d619837cd3c906dba118}{to\+Valid}} (std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Функция валидации передаваемого текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtableCipher_a51e119ef14658626a9b10aef381704ec}{is\+\_\+rus}} (wchar\+\_\+t wc)
+\begin{DoxyCompactList}\small\item\em Функция проверки принадлежности к русскому алфавиту \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtableCipher_ae251a0efae96bb815fdd7685308fa38c}{is\+\_\+low\+\_\+rus}} (wchar\+\_\+t wch)
+\begin{DoxyCompactList}\small\item\em Функция проверки на нижний регистр \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtableCipher_af9b2bc9f12cb823aafc18153102ff6c3}\label{classtableCipher_af9b2bc9f12cb823aafc18153102ff6c3}} 
+int \mbox{\hyperlink{classtableCipher_af9b2bc9f12cb823aafc18153102ff6c3}{key1}}
+\begin{DoxyCompactList}\small\item\em Ключ для зашифрования текста \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtableCipher_a6d712b966b7138f41ed3c8aaac0121bb}\label{classtableCipher_a6d712b966b7138f41ed3c8aaac0121bb}} 
+std\+::wstring \mbox{\hyperlink{classtableCipher_a6d712b966b7138f41ed3c8aaac0121bb}{num\+Alpha}} = L\char`\"{}АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ\char`\"{}
+\begin{DoxyCompactList}\small\item\em Русский алфавит в верхнем регистре \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtableCipher_a30788140d5b0efc7dcc5dfa6ba71e08f}\label{classtableCipher_a30788140d5b0efc7dcc5dfa6ba71e08f}} 
+std\+::wstring \mbox{\hyperlink{classtableCipher_a30788140d5b0efc7dcc5dfa6ba71e08f}{lnum\+Alpha}} = L\char`\"{}абвгдеёжзийклмнопрстуфхцчшщьыъэюя\char`\"{}
+\begin{DoxyCompactList}\small\item\em Русский алфавит в нижнем регистре \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс шифрования и расшифрования текста шифром табличной маршрутной перестановки 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classtableCipher_aa6c08a9d9627fb9a3c8426cf8f42ebc6}\label{classtableCipher_aa6c08a9d9627fb9a3c8426cf8f42ebc6}} 
+\index{tableCipher@{tableCipher}!tableCipher@{tableCipher}}
+\index{tableCipher@{tableCipher}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{tableCipher()}{tableCipher()}}
+{\footnotesize\ttfamily table\+Cipher\+::table\+Cipher (\begin{DoxyParamCaption}\item[{const int \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ шифрования \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classtableCipher_a6fa23a4051ff1e08efa5f05b46d007a6}\label{classtableCipher_a6fa23a4051ff1e08efa5f05b46d007a6}} 
+\index{tableCipher@{tableCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring table\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::wstring \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Функция расшифрования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Открытый текст 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtableCipher_ae267fd8d4b8206e9d0e9669b81a070f2}\label{classtableCipher_ae267fd8d4b8206e9d0e9669b81a070f2}} 
+\index{tableCipher@{tableCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring table\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::wstring \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Функция зашифрования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtableCipher_ae251a0efae96bb815fdd7685308fa38c}\label{classtableCipher_ae251a0efae96bb815fdd7685308fa38c}} 
+\index{tableCipher@{tableCipher}!is\_low\_rus@{is\_low\_rus}}
+\index{is\_low\_rus@{is\_low\_rus}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{is\_low\_rus()}{is\_low\_rus()}}
+{\footnotesize\ttfamily int table\+Cipher\+::is\+\_\+low\+\_\+rus (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{wch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция проверки на нижний регистр 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em wch} & Передаваемый символ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Порядковый номер буквы в массиве, содержащем алфавит в нижнем регистре, если символ -\/ в нижнем регистре, -\/1 -\/ если нет. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtableCipher_a51e119ef14658626a9b10aef381704ec}\label{classtableCipher_a51e119ef14658626a9b10aef381704ec}} 
+\index{tableCipher@{tableCipher}!is\_rus@{is\_rus}}
+\index{is\_rus@{is\_rus}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{is\_rus()}{is\_rus()}}
+{\footnotesize\ttfamily bool table\+Cipher\+::is\+\_\+rus (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{wc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция проверки принадлежности к русскому алфавиту 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em wc} & Передаваемый символ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение true, если символ -\/ буква русского алфавита, false -\/ если нет. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtableCipher_ac6bd5dc304c9d619837cd3c906dba118}\label{classtableCipher_ac6bd5dc304c9d619837cd3c906dba118}} 
+\index{tableCipher@{tableCipher}!toValid@{toValid}}
+\index{toValid@{toValid}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{toValid()}{toValid()}}
+{\footnotesize\ttfamily std\+::wstring table\+Cipher\+::to\+Valid (\begin{DoxyParamCaption}\item[{std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Функция валидации передаваемого текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Передаваемый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидированный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст пустой или содержит недопустимые символы \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tableCipher_8h}{table\+Cipher.\+h}}\item 
+table\+Cipher.\+cpp\end{DoxyCompactItemize}
